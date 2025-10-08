@@ -117,7 +117,7 @@ function dispalyGreetings(today){
         var monthName = monthNames[today.getMonth()];
         var date = today.getDate();
         var year = today.getFullYear();
-        document.getElementById('date').innerHTML =dayName+" • "+monthName+" "+date+"日 • "+year年;
+        document.getElementById('date').innerHTML = `${dayName}，${monthName}${date}日 ${year}年`;
 
     }
 
