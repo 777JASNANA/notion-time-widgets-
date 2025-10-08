@@ -24,9 +24,9 @@
             flex-direction: column;
             max-width: 95%;
             margin: auto;
-            border: 3px solid #FF8FC9;
+            border: 3px solid #000000;
             border-radius: 5px;
-            box-shadow: 2px 2px 1px 0px #FFB8DC;
+            box-shadow: 2px 2px 1px 0px #000000;
 
         }
 
@@ -37,17 +37,17 @@
 
         .date {
       
-            font-family: monospace;
+            font-family: Noto Serif Simplified Chinese;
             font-size: 2em;
         }
 
         .clock {
-            font-family: monospace;
+            font-family: Noto Serif Simplified Chinese;
             font-size: 2em;
         }
 
         .time {
-            display: inline-block;
+            display: Noto Serif Simplified Chinese;
             min-width: 20px;
         }
 
@@ -99,7 +99,7 @@ function dispalyGreetings(today){
         if (hrs < 12)
             greet = '早上好  '+name;
         else if (hrs >= 12 && hrs <= 17)
-            greet = '中午好 '+name;
+            greet = '下午好 '+name;
         else if (hrs >= 17 && hrs <= 24)
             greet = '晚上好  '+name;
         document.getElementById('greet').innerHTML = greet;
@@ -109,8 +109,8 @@ function dispalyGreetings(today){
     function dispalyDate(today) {  
        
         const days = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-        const monthNames = ["一月", "二月", "三月", "四月", "五月", "六月",
-  "七月", "八月", "九月", "十月", "十一月", "十二月"
+        const monthNames = ["01", "02", "03", "04", "05", "06",
+  "07", "08", "09", "10", "11", "12"
 ];
 
         var dayName = days[today.getDay()];
